@@ -11,7 +11,7 @@ import Foundation
 struct MysicAPI {
     
     static var shared = MysicAPI()
-    private var uri = "http://192.168.18.10:3000/v2";
+    private var uri = "http://192.168.18.14:3000/api/v1";
     private init() {}
     
     private let session = URLSession.shared
@@ -111,8 +111,7 @@ struct MysicAPI {
     }
     
     private func generatedDefaultURL(from category: Category, params: QueryParams?) -> URL {
-        var component = URLComponents(url: URL(string: "\(uri)/\(category)")!, resolvingAgainstBaseURL: true)
-        
+        var component = URLComponents(url: URL(string: "\(uri)/\(category.text)")!, resolvingAgainstBaseURL: true)
         if params != nil {
             component?.queryItems = params!.transformMap().map{k,v in URLQueryItem(name: k, value: v)}
         }

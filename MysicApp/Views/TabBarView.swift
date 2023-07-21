@@ -13,6 +13,7 @@ struct TabBarView: View {
     
     @StateObject var globalVM = GlobalViewModel()
     @StateObject var playerVM = PlayerViewModel()
+    @StateObject var playerV2VM = PlayerV2Model()
     @StateObject var homeVM = HomeViewModel()
     @StateObject var exploreVM = ExplorerViewModel()
     @StateObject var searchVM = SearchViewModel()
@@ -58,7 +59,7 @@ struct TabBarView: View {
             }
             
             Miniplayer(animation: animation)
-                .opacity(playerVM.song != nil ? 1 : 0)
+                .opacity(playerV2VM.song != nil ? 1 : 0)
 //                .opacity(audioKit.index >= 0 ? 1 : 0)
             
         }
@@ -68,6 +69,7 @@ struct TabBarView: View {
         .environmentObject(exploreVM)
         .environmentObject(searchVM)
         .environmentObject(audioKit)
+        .environmentObject(playerV2VM)
         
     }
 }

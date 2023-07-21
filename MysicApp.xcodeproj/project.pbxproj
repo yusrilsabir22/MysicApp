@@ -87,6 +87,7 @@
 		A346E0742A4CF0A800BB34F4 /* DetailGenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A346E0732A4CF0A800BB34F4 /* DetailGenreView.swift */; };
 		A346E0762A4CF0FC00BB34F4 /* RetryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A346E0752A4CF0FC00BB34F4 /* RetryView.swift */; };
 		A346E0782A4CF1A100BB34F4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A346E0772A4CF1A100BB34F4 /* SearchView.swift */; };
+		A36DD2DE2A69C6E1004AAEA5 /* PlayerV2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36DD2DD2A69C6E1004AAEA5 /* PlayerV2Model.swift */; };
 		A3CE8D3D2A53078E00605EF6 /* ExpandedBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CE8D3C2A53078E00605EF6 /* ExpandedBottomSheet.swift */; };
 		A3CE8D3F2A53515900605EF6 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CE8D3E2A53515800605EF6 /* CustomSlider.swift */; };
 /* End PBXBuildFile section */
@@ -187,6 +188,7 @@
 		A346E0732A4CF0A800BB34F4 /* DetailGenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGenreView.swift; sourceTree = "<group>"; };
 		A346E0752A4CF0FC00BB34F4 /* RetryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryView.swift; sourceTree = "<group>"; };
 		A346E0772A4CF1A100BB34F4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A36DD2DD2A69C6E1004AAEA5 /* PlayerV2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerV2Model.swift; sourceTree = "<group>"; };
 		A3CE8D3C2A53078E00605EF6 /* ExpandedBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedBottomSheet.swift; sourceTree = "<group>"; };
 		A3CE8D3E2A53515800605EF6 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -365,6 +367,7 @@
 				A346E0252A49CC8D00BB34F4 /* PlayerViewModel.swift */,
 				A346E0272A49CC8D00BB34F4 /* SearchViewModel.swift */,
 				A346E0412A49CE0200BB34F4 /* GlobalViewModel.swift */,
+				A36DD2DD2A69C6E1004AAEA5 /* PlayerV2Model.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				A346E03F2A49CD1100BB34F4 /* EnvironmentValues+ImageCache.swift in Sources */,
 				A346DFF12A49BF9F00BB34F4 /* Miniplayer.swift in Sources */,
 				A346E0722A4C896600BB34F4 /* DetailPlaylistView.swift in Sources */,
+				A36DD2DE2A69C6E1004AAEA5 /* PlayerV2Model.swift in Sources */,
 				A346E0152A49CC5200BB34F4 /* Category.swift in Sources */,
 				A346E0702A4A124B00BB34F4 /* GenreListView.swift in Sources */,
 				A346E02A2A49CC8D00BB34F4 /* PlayerViewModel.swift in Sources */,

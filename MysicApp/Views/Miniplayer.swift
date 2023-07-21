@@ -10,7 +10,7 @@ import SwiftUI
 struct Miniplayer: View {
     
     @EnvironmentObject var globalVM: GlobalViewModel
-    @EnvironmentObject var playerVM: PlayerViewModel
+    @EnvironmentObject var playerVM: PlayerV2Model
     @EnvironmentObject var audioKit: AudioKit
     @State var currentSong = GlobalViewModel.mock
     
@@ -292,7 +292,6 @@ struct Miniplayer: View {
             }
         }
         .onReceive(playerVM.$phase) {newVal in
-            print("NEW VALUE: \(newVal)")
             switch(newVal) {
             case .play:
                 self.status = "playing"
@@ -333,7 +332,6 @@ struct Miniplayer_Previews: PreviewProvider {
         @State var expand = false
         Miniplayer(animation: animation)
             .environmentObject(GlobalViewModel())
-            .environmentObject(PlayerViewModel())
-            .environmentObject(AudioKit())
+            .environmentObject(PlayerV2Model())
     }
 }

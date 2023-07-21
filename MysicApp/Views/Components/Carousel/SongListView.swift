@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SongListView: View {
     @EnvironmentObject var globalVM: GlobalViewModel
-    @EnvironmentObject var playerVM: PlayerViewModel
+    @EnvironmentObject var playerVM: PlayerV2Model
     @EnvironmentObject var audioKit: AudioKit
     
     var data: DatumContent

@@ -14,6 +14,7 @@ enum Category: String, CaseIterable {
     case explorer
     case browse
     case play
+    case playInfo="play-info"
     
     var text: String {
         return rawValue.lowercased()
